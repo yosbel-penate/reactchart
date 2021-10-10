@@ -18,7 +18,6 @@ export class Stock extends Component {
         let StockSymbol='FB';
         const API_KEY='DH1JL57PC0S03TQA';
         let API_Call=`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`
-        //let API_Call='https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=demo'
         let stockChartXValuesFunction=[];
         let stockChartYValuesFunction=[];
         fetch(API_Call)
